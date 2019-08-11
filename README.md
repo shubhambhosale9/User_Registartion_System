@@ -7,8 +7,6 @@
 
 First, clone the repository to your local machine:
 
-First, clone the repository to your local machine:
-
 ```bash
 git clone  git@github.com:shubhambhosale9/User_Registration_System.git
 ```
