@@ -1,0 +1,19 @@
+DC1 server :- ubuntu@195.229.192.139 
+
+DC2 server :- ubuntu@185.56.88.50 
+
+WAP server1 :- ssh ubuntu@10.10.253.7 -p 49226
+
+Ubuntu Server : ssh bw@10.11.255.37  
+
+Service related Commands ==========================================>>>>> 
+
+systemctl status waf.service
+
+Commands of windows djago procss:-
+
+python -m django startproject sign_in_sign_up 
+
+python.exe .\manage.py migrate
+
+user_registration\templates\registartion\signup.html

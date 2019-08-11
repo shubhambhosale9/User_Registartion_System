@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if user.is_authenticated %} <p> <h1>Welcome  {{ user.username }}</h1>
+    <p>
+       <strong>Total users registered: </strong> {{ count }}
+       <p><b>All User Profiles Details As Follows : </b></p>
+               {% for user in users%}
+               <div class="row justify-content-center">
+                 <div class="col-8">
+                   <div class="card">
+                     <div class="card-body">
+                          <p> <b>User Name :</b> {{user.username}}</p>
+                          <p><b>User Email : </b>  {{user.email}}</p>
+                          <p><b>User Work Choice :</b> {{user.work_choice}}</p>
+                          <p><b>Cover Letter :</b> {{user.cover_letter}}</p>
+                          <p><b>Attachment File :</b> {{user.file}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+      {% else %}<h2>Homepage</h2> <p>Welcome to My Site, visitor!{% endif %}</p>
+{% endblock %}
